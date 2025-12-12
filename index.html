@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>𝓟𝓔𝓡𝓛𝓞 𝓒𝓐𝓒𝓗 & 𝓕𝓘𝓧𝓔𝓓</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+@keyframes neon-flicker {
+    0%,19%,21%,23%,25%,54%,56%,100% {
+        text-shadow:0 0 5px #39ff14,0 0 10px #39ff14,0 0 20px #39ff14,0 0 40px #39ff14;
+    }
+    20%,22%,24%,55% {
+        text-shadow:none;
+    }
+}
+
+h1, h2, .neon-text {
+    color: #39ff14;
+    animation: neon-flicker 1.5s infinite alternate;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #0a0a0a, #1a1a1a);
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    border: 2px solid #39ff14;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #39ff14;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #39ff14;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.view-btn:hover {
+    background-color: #0aff00;
+    box-shadow: 0 0 10px #39ff14;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: 50px;
+    border-top: 2px solid #39ff14;
+}
+
+/* أزرار واتساب عائمة */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.whatsapp-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #25D366;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-button a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1 class="neon-text">𝓟𝓔𝓡𝓛𝓞 𝓒𝓐𝓒𝓗 & 𝓕𝓘𝓧𝓔𝓓</h1>
+    <p>اضغط على الورقة لعرض تفاصيلها</p>
+</header>
+
+<section>
+    <h2 class="neon-text">أوراق جديدة</h2>
+    <div class="cards">
+        <div class="card">
+            <a href="paper1.html"><img src="db3.jpg"=ورقة+1" alt="ورقة 1"></a>
+            <h3>ورقة المراهنة 1</h3>
+            <a href="paper1.html" class="view-btn">عرض</a>
+        </div>
+        <div class="card">
+            <a href="paper2.html"><img src="db3.jpg"=ورقة+2" alt="ورقة 2"></a>
+            <h3>ورقة المراهنة 2</h3>
+            <a href="paper2.html" class="view-btn">عرض</a>
+        </div>
+        <div class="card">
+            <a href="paper3.html"><img src="db3.jpg"=ورقة+3" alt="ورقة 3"></a>
+            <h3>ورقة المراهنة 3</h3>
+            <a href="paper3.html" class="view-btn">عرض</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="neon-text">أوراق سابقة</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="sabi9a1.jpeg"ورقة سابق 1">
+            <h3>ورقة سابق 1</h3>
+        </div>
+        <div class="card">
+            <img src="sabi9a2.jpeg" alt="ورقة سابق 2">
+            <h3>ورقة سابق 2</h3>
+        </div>
+        <div class="card">
+            <img src="sabi9a3.jpeg" alt="ورقة سابق 3">
+            <h3>ورقة سابق 3</h3>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 𝓟𝓔𝓡𝓛𝓞 𝓒𝓐𝓒𝓗 & 𝓕𝓘𝓧𝓔𝓓
+</footer>
+
+<!-- أزرار واتساب عائمة -->
+<div class="whatsapp-button">
+    <a href="https://wa.me/212611752829" target="_blank" title="+212611752829">📞</a>
+    <a href="https://wa.me/212783815719" target="_blank" title="+212783815719">📞</a>
+</div>
+
+</body>
+</html>
